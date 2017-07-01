@@ -8,6 +8,7 @@ end
 gem 'rails', '~> 5.1.1'
 gem 'pg'
 gem 'sqlite3'
+gem 'database_cleaner', '~> 1.6', '>= 1.6.1'
 gem 'devise'
 gem 'puma', '~> 3.7'
 gem 'sass-rails', '~> 5.0'
