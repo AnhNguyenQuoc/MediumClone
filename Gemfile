@@ -24,6 +24,9 @@ group :development, :test do
   gem 'capybara', '~> 2.8'
   gem 'selenium-webdriver'
   gem 'rspec-rails', '~> 3.4'
+  gem 'factory_girl_rails', '~> 4.5.0'
+  gem 'faker', '~> 1.6.1'
+  gem 'launchy', '~> 2.4.3'
 end
 
 group :development do
