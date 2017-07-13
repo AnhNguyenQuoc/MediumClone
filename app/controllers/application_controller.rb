@@ -3,6 +3,12 @@ class ApplicationController < ActionController::Base
 
   before_action :configure_permitted_parameters, if: :devise_controller?
 
+  def current_user?(user)
+    current_user.id === user.id
+  end
+
+  helper_method :current_user?
+
   protected
 
   def configure_permitted_parameters
@@ -16,4 +22,6 @@ class ApplicationController < ActionController::Base
         user_params.permit(:username, :email, :password, :password_confirmation, :current_password)
       end
   end
+
+
 end
